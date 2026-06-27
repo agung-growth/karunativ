@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karunativ - Digital Invitation Studio | Crafting Love Into Motion</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandBg: '#09090b',
+                        brandSurface: '#18181b',
+                        brandGold: '#cf9f74',
+                        brandGoldDark: '#b8875b',
+                        brandText: '#fafafa',
+                        brandMuted: '#a1a1aa'
+                    },
+                    fontFamily: {
+                        serif: ['Cinzel', 'Georgia', 'serif'],
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Bootstrap Icons (Untuk melengkapi estetika UI modern) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- GSAP for Smooth Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body class="bg-brandBg text-brandText font-sans antialiased selection:bg-brandGold selection:text-black">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-brandBg/80 backdrop-blur-md border-b border-brandGold/10 px-6 py-4 md:px-12 flex justify-between items-center">
+        <a href="#" class="font-serif text-xl md:text-2xl font-bold tracking-widest text-brandGold hover:opacity-90 transition-opacity">
+            KARUNATIV
+        </a>
+        <ul class="hidden md:flex space-x-8 text-sm font-medium tracking-wider">
+            <li><a href="#fitur" class="hover:text-brandGold transition-colors">Fitur</a></li>
+            <li><a href="#referensi" class="hover:text-brandGold transition-colors">Demo</a></li>
+            <li><a href="#harga" class="hover:text-brandGold transition-colors">Harga</a></li>
+            <li><a href="https://wa.me/6289502072043?text=Halo%20Karunativ,%20saya%20tertarik%20untuk%20tanya%20info%20lebih%20lanjut." target="_blank" class="hover:text-brandGold transition-colors">Kontak</a></li>
+        </ul>
+        <a href="https://wa.me/6289502072043?text=Halo%20Karunativ,%20saya%20ingin%20konsultasi%20undangan." target="_blank" class="md:hidden text-brandGold text-2xl">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-24 pb-12 relative overflow-hidden">
+        <!-- Background Glow Subtle Accent -->
+        <div class="absolute w-[300px] h-[300px] bg-brandGold/5 blur-[120px] rounded-full top-1/4 left-1/2 -translate-x-1/2 -z-10"></div>
+        
+        <!-- Logo Emblem Shape -->
+        <div class="logo-box w-40 h-40 md:w-44 md:h-44 rounded-full bg-gradient-to-tr from-zinc-900 to-black border-2 border-brandGold/80 flex justify-center items-center mb-8 shadow-[0_0_40px_rgba(207,159,116,0.15)] relative">
+            <span class="font-serif text-5xl md:text-6xl text-brandGold font-bold select-none">Ka</span>
+            <span class="absolute top-10 right-10 text-brandGold text-xl animate-pulse">✦</span>
+        </div>
+        
+        <h1 class="hero-title font-serif text-4xl md:text-6xl tracking-[0.2em] font-light mb-4 text-white uppercase">
+            KARUNATIV
+        </h1>
+        <p class="hero-tagline font-serif text-sm md:text-lg tracking-[0.3em] text-brandGold mb-6 uppercase">
+            Crafting Love Into Motion
+        </p>
+        <p class="hero-sub font-light text-brandMuted text-sm md:text-base max-w-xl mx-auto mb-10 leading-relaxed">
+            Premium & Highly Interactive Digital Invitation Studio. Hadirkan keindahan janji suci pernikahan Anda melalui sentuhan animasi web interaktif yang mewah dan berkelas.
+        </p>
+        
+        <div class="hero-btns flex flex-col sm:flex-row gap-4 w-full justify-center px-6 sm:px-0 max-w-md">
+            <a href="https://wa.me/6289502072043?text=Halo%20Karunativ,%20saya%20ingin%20memesan%20undangan%20digital%20premium." target="_blank" class="inline-block bg-brandGold text-zinc-950 font-semibold text-xs tracking-widest uppercase py-4 px-8 rounded border border-brandGold hover:bg-transparent hover:text-brandGold hover:shadow-[0_0_25px_rgba(207,159,116,0.3)] transition-all duration-300 text-center">
+                Pesan Sekarang
+            </a>
+            <a href="#referensi" class="inline-block bg-transparent text-brandText font-semibold text-xs tracking-widest uppercase py-4 px-8 rounded border border-zinc-700 hover:border-brandGold hover:text-brandGold transition-all duration-300 text-center">
+                Lihat Referensi
+            </a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="fitur" class="py-24 px-6 md:px-12 bg-zinc-950/40 border-y border-zinc-900">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="font-serif text-2xl md:text-4xl tracking-widest text-center mb-16 uppercase">
+                Mengapa Karunativ?
+                <span class="block text-xs text-brandGold tracking-normal mt-3 font-sans">✦ PREMIUM EXPERIENCE ✦</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-brandSurface/40 border border-zinc-900 rounded-xl p-8 hover:border-brandGold/30 hover:-translate-y-1 transition-all duration-300 text-center group">
+                    <div class="w-14 h-14 bg-brandGold/10 rounded-full flex justify-center items-center text-brandGold text-2xl mx-auto mb-6 group-hover:bg-brandGold group-hover:text-black transition-colors duration-300">
+                        <i class="bi bi-vector-pen"></i>
+                    </div>
+                    <h3 class="font-serif text-lg tracking-wide mb-4">Animasi Premium (GSAP)</h3>
+                    <p class="text-sm text-brandMuted font-light leading-relaxed">Bukan sekadar video kaku atau slide gambar statis. Transisi halaman mengalir sangat mulus tanpa mengorbankan performa kecepatan render mobile Android.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-brandSurface/40 border border-zinc-900 rounded-xl p-8 hover:border-brandGold/30 hover:-translate-y-1 transition-all duration-300 text-center group">
+                    <div class="w-14 h-14 bg-brandGold/10 rounded-full flex justify-center items-center text-brandGold text-2xl mx-auto mb-6 group-hover:bg-brandGold group-hover:text-black transition-colors duration-300">
+                        <i class="bi bi-envelope-heart"></i>
+                    </div>
+                    <h3 class="font-serif text-lg tracking-wide mb-4">Manajemen RSVP Dinamis</h3>
+                    <p class="text-sm text-brandMuted font-light leading-relaxed">Para tamu undangan dapat langsung mengonfirmasi kehadiran serta pilihan menu secara terintegrasi real-time ke sistem dasbor pengantin.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-brandSurface/40 border border-zinc-900 rounded-xl p-8 hover:border-brandGold/30 hover:-translate-y-1 transition-all duration-300 text-center group">
+                    <div class="w-14 h-14 bg-brandGold/10 rounded-full flex justify-center items-center text-brandGold text-2xl mx-auto mb-6 group-hover:bg-brandGold group-hover:text-black transition-colors duration-300">
+                        <i class="bi bi-wallet2"></i>
+                    </div>
+                    <h3 class="font-serif text-lg tracking-wide mb-4">Digital Gift Registry</h3>
+                    <p class="text-sm text-brandMuted font-light leading-relaxed">Integrasi tautan amplop digital ataupun e-wallet langsung memudahkan kerabat dekat untuk mengirimkan kado kebahagiaan dengan aman.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio / Demo Section -->
+    <section id="referensi" class="py-24 px-6 md:px-12">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="font-serif text-2xl md:text-4xl tracking-widest text-center mb-16 uppercase">
+                Referensi Live Demo
+                <span class="block text-xs text-brandGold tracking-normal mt-3 font-sans">✦ SELEKSI DESAIN TERBAIK ✦</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Demo item 1 -->
+                <div onclick="window.open('https://wa.me/6289502072043?text=Halo%20Karunativ,%20saya%20tertarik%20melihat%20demo%20The%20Classic%20Gold.', '_blank')" 
+                     class="group relative bg-zinc-900 rounded-xl overflow-hidden aspect-[16/10] flex flex-col justify-center items-center p-6 text-center cursor-pointer border border-zinc-800 hover:border-brandGold/40 transition-all duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent opacity-80 z-0"></div>
+                    <div class="z-10">
+                        <h3 class="font-serif text-xl tracking-wide text-white mb-2">The Classic Gold</h3>
+                        <p class="text-xs text-brandMuted font-light mb-6">Elegant, Timeless, Soft Animations</p>
+                        <span class="inline-block text-[10px] tracking-widest uppercase border border-brandGold text-brandGold px-4 py-1.5 rounded-full group-hover:bg-brandGold group-hover:text-black transition-colors duration-300">
+                            Lihat Demo
+                        </span>
+                    </div>
+                </div>
+                <!-- Demo item 2 -->
+                <div onclick="window.open('https://wa.me/6289502072043?text=Halo%20Karunativ,%20saya%20tertarik%20melihat%20demo%20Modern%20Minimalist.', '_blank')" 
+                     class="group relative bg-zinc-900 rounded-xl overflow-hidden aspect-[16/10] flex flex-col justify-center items-center p-6 text-center cursor-pointer border border-zinc-800 hover:border-brandGold/40 transition-all duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent opacity-80 z-0"></div>
+                    <div class="z-10">
+                        <h3 class="font-serif text-xl tracking-wide text-white mb-2">Modern Minimalist</h3>
+                        <p class="text-xs text-brandMuted font-light mb-6">Clean Layout, Smooth Typographic Motion</p>
+                        <span class="inline-block text-[10px] tracking-widest uppercase border border-brandGold text-brandGold px-4 py-1.5 rounded-full group-hover:bg-brandGold group-hover:text-black transition-colors duration-300">
+                            Lihat Demo
+                        </span>
+                    </div>
+                </div>
+                <!-- Demo item 3 -->
+                <div onclick="window.open('https://wa.me/6289502072043?text=Halo%20Karunativ,%20saya%20tertarik%20melihat%20demo%20The%20Luxury%203D.', '_blank')" 
+                     class="group relative bg-zinc-900 rounded-xl overflow-hidden aspect-[16/10] flex flex-col justify-center items-center p-6 text-center cursor-pointer border border-zinc-800 hover:border-brandGold/40 transition-all duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent opacity-80 z-0"></div>
+                    <div class="z-10">
+                        <h3 class="font-serif text-xl tracking-wide text-white mb-2">The Luxury 3D</h3>
+                        <p class="text-xs text-brandMuted font-light mb-6">Three.js Immersive 3D Interaction</p>
+                        <span class="inline-block text-[10px] tracking-widest uppercase border border-brandGold text-brandGold px-4 py-1.5 rounded-full group-hover:bg-brandGold group-hover:text-black transition-colors duration-300">
+                            Lihat Demo
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="harga" class="py-24 px-6 md:px-12 bg-zinc-950/40 border-t border-zinc-900">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="font-serif text-2xl md:text-4xl tracking-widest text-center mb-16 uppercase">
+                Paket Investasi Kebahagiaan
+                <span class="block text-xs text-brandGold tracking-normal mt-3 font-sans">✦ TRANSPARENT PRICING ✦</span>
+            </h2>
+            <div class="flex flex-col md:flex-row justify-center items-stretch gap-8">
+                <!-- Paket Silver -->
+                <div class="bg-brandSurface border border-zinc-900 rounded-2xl p-8 flex-1 flex flex-col text-center hover:border-zinc-800 transition-colors">
+                    <h3 class="font-serif text-xl tracking-wide mb-2 text-white">Silver Package</h3>
+                    <div class="text-2xl md:text-3xl font-serif text-brandGold font-semibold mb-6">
+                        Rp 199k <span class="text-xs font-sans font-light text-brandMuted">/ paket</span>
+                    </div>
+                    <ul class="text-sm font-light text-brandMuted text-left space-y-4 mb-8 flex-1">
+                        <li class="flex items-center gap-3"><i class="bi bi-check2 text-brandGold"></i> Template Animasi Pilihan</li>
+                        <li class="flex items-center gap-3"><i class="bi bi-check2 text-brandGold"></i> Masa Aktif Undangan 3 Bulan</li>
+                        <li class="flex items-center gap-3"><i class="bi bi-check2 text-brandGold"></i> Fitur RSVP & Peta Navigasi</li>
+                        <li class="flex items-center gap-3"><i class="bi bi-check2 text-brandGold"></i> Musik Latar Standar</li>
+                    </ul>
+                    <a href="https://wa.me/6289502072043?text=Halo%20Karunativ,%20saya%20ingin%20memesan%20Paket%20Silver." target="_blank" class="block w-full bg-transparent border border-zinc-700 text-brandText hover:border-brandGold hover:text-brandGold text-center py-3 text-xs tracking-wider uppercase font-medium rounded transition-colors">
+                        Pilih Paket
+                    </a>
+                </div>
+                
+                <!-- Paket Gold Premium -->
+                <div class="bg-zinc-900 border-2 border-brandGold rounded-2xl p-8 flex-1 flex flex-col text-center relative shadow-[0_0_30px_rgba(207,159,116,0.1)]">
+                    <span class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-brandGold text-black text-[10px] tracking-widest font-bold px-4 py-1 rounded-full uppercase">
+                        TERPOPULER
+                    </span>
+                    <h3 class="font-serif text-xl tracking-wide mb-2 text-white mt-2">Gold Premium</h3>
+                    <div class="text-2xl md:text-3xl font-serif text-brandGold font-semibold mb-6">
+                        Rp 399k <span class="text-xs font-sans font-light text-brandMuted">/ paket</span>
+                    </div>
+                    <ul class="text-sm font-light text-brandMuted text-left space-y-4 mb-8 flex-1">
+                        <li class="flex items-center gap-3"><i class="bi bi-check2 text-brandGold"></i> Custom Kustomisasi Gerakan (GSAP)</li>
+                        <li class="flex items-center gap-3"><i class="bi bi-check2 text-brandGold"></i> Masa Aktif Undangan 1 Tahun</li>
+                        <li class="flex items-center gap-3"><i class="bi bi-check2 text-brandGold"></i> RSVP Dinamis & Amplop Digital</li>
+                        <li class="flex items-center gap-3"><i class="bi bi-check2 text-brandGold"></i> Custom Subdomain Khusus</li>
+                        <li class="flex items-center gap-3"><i class="bi bi-check2 text-brandGold"></i> Kuota Tamu Tanpa Batas</li>
+                    </ul>
+                    <a href="https://wa.me/6289502072043?text=Halo%20Karunativ,%20saya%20ingin%20memesan%20Paket%20Gold%20Premium." target="_blank" class="block w-full bg-brandGold border border-brandGold text-zinc-950 hover:bg-transparent hover:text-brandGold font-semibold text-center py-3 text-xs tracking-wider uppercase rounded transition-all">
+                        Pilih Paket
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-24 px-6 text-center border-b border-zinc-900 bg-gradient-to-b from-brandBg to-black">
+        <h2 class="font-serif text-2xl md:text-4xl tracking-wide mb-4 uppercase text-white">
+            Siap Mewujudkan Undangan Impian Anda?
+        </h2>
+        <p class="text-brandMuted text-sm md:text-base font-light max-w-xl mx-auto mb-10 leading-relaxed">
+            Hubungi konsultan digital kreatif kami sekarang juga untuk kustomisasi transisi animasi unik, pencocokan palet warna dekorasi, hingga integrasi fitur spesial.
+        </p>
+        <a href="https://wa.me/6289502072043?text=Halo%20Karunativ,%20saya%20ingin%20konsultasi%20mengenai%20undangan%20digital%20saya." target="_blank" class="inline-flex items-center gap-3 bg-brandGold text-zinc-950 font-semibold text-xs tracking-widest uppercase py-4 px-8 rounded border border-brandGold hover:bg-transparent hover:text-brandGold hover:shadow-[0_0_25px_rgba(207,159,116,0.3)] transition-all duration-300">
+            <i class="bi bi-whatsapp text-base"></i> Hubungi WhatsApp Kami
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-black text-center text-xs text-brandMuted border-t border-zinc-950">
+        <p class="tracking-widest font-light">&copy; 2026 KARUNATIV Digital Studio. All Rights Reserved.</p>
+    </footer>
+
+    <!-- GSAP Initialization for Smooth Entrance Showcase -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            gsap.from('.logo-box', { duration: 1.2, scale: 0.85, opacity: 0, ease: 'power3.out' });
+            gsap.from('.hero-title', { duration: 1, y: 35, opacity: 0, delay: 0.4, ease: 'power3.out' });
+            gsap.from('.hero-tagline', { duration: 1, y: 25, opacity: 0, delay: 0.6, ease: 'power3.out' });
+            gsap.from('.hero-sub', { duration: 1, y: 20, opacity: 0, delay: 0.8, ease: 'power3.out' });
+            gsap.from('.hero-btns', { duration: 1, y: 15, opacity: 0, delay: 1, ease: 'power3.out' });
+        });
+    </script>
+</body>
+</html>
